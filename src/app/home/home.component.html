@@ -123,13 +123,7 @@
                 <h2 class="hdr_text">Testimonials</h2>
                 <p class="tsmnl_sub_hdr">It is a long established fact that a reader will be distracted by the readable content of a page <br> when looking at its layout.</p>
             </div>
-            <owl-carousel [options]="carouselOptions" [carouselClasses]="['owl-theme', 'row', 'sliding']"> <!--[items]="images"-->
-                <!-- <div class="item" *ngFor="let image of imagesList;let i= index">
-                    <img class="slide-image" src="{{image.image}}" >
-                    <div class="slide-text">
-                    <h4>{{image.text}}</h4>
-                    </div>
-                </div> -->
+            <owl-carousel [options]="carouselOptions" [carouselClasses]="['owl-theme', 'row', 'sliding']">
                 <div class="tstmnl_slider item" *ngFor="let slider of sliderList;let i= index">
                     <div class="row-spb">
                         <div class="row-vrt-c">
