@@ -48,42 +48,28 @@
         <!-- Doctors Section -->
         <div class="doctors_sec">
             <h2 class="hdr_text">Doctors</h2>
-            <div class="row-spb">
+            <div class="row-spb resp_sec">
                 <div class="category_sec">
                     <h3>Pediatric BMT</h3>
-                    <div class="dctr_info">
+                    <div class="dctr_info" *ngFor="let info of doctorsInfo">
                         <img src="../../assets/bitmap-person.png" alt="bitmap-person">
-                        <h4>Dr. Vijay Agarwal</h4>
-                        <h6>MD, MRCP, PhD,CCT <br> Lead & Sr. Consultant - Medical Oncology & Haematology</h6>
-                        <p>Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with over 12 years of experience in Oncology. Dr. Agarwal has been practising Medical Oncology since 2004.</p>
+                        <h4>{{info.name}}</h4>
+                        <h6>{{info.proffession}}</h6>
+                        <p>{{info.description}}</p>
                         <button>Know more</button>
-                    </div>
-                    <div class="divider_line"></div>
-                    <div class="dctr_info">
-                        <img src="../../assets/bitmap-person.png" alt="bitmap-person">
-                        <h4>Dr. Vijay Agarwal</h4>
-                        <h6>MD, MRCP, PhD,CCT <br> Lead & Sr. Consultant - Medical Oncology & Haematology</h6>
-                        <p>Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with over 12 years of experience in Oncology. Dr. Agarwal has been practising Medical Oncology since 2004.</p>
-                        <button>Know more</button>
+                        <div class="divider_line"></div>
                     </div>
                 </div>
                 <div class="category_sec">
                     <h3>Adult BMT </h3>
                     <div class="dctr_info">
-                        <div class="dctr_info">
+                        <div class="dctr_info" *ngFor="let info of doctorsInfo">
                             <img src="../../assets/bitmap-person.png" alt="bitmap-person">
-                            <h4>Dr. Vijay Agarwal</h4>
-                            <h6>MD, MRCP, PhD,CCT <br> Lead & Sr. Consultant - Medical Oncology & Haematology</h6>
-                            <p>Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with over 12 years of experience in Oncology. Dr. Agarwal has been practising Medical Oncology since 2004.</p>
+                            <h4>{{info.name}}</h4>
+                            <h6>{{info.proffession}}</h6>
+                            <p>{{info.description}}</p>
                             <button>Know more</button>
-                        </div>
-                        <div class="divider_line"></div>
-                        <div class="dctr_info">
-                            <img src="../../assets/bitmap-person.png" alt="bitmap-person">
-                            <h4>Dr. Vijay Agarwal</h4>
-                            <h6>MD, MRCP, PhD,CCT <br> Lead & Sr. Consultant - Medical Oncology & Haematology</h6>
-                            <p>Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with over 12 years of experience in Oncology. Dr. Agarwal has been practising Medical Oncology since 2004.</p>
-                            <button>Know more</button>
+                            <div class="divider_line"></div>
                         </div>
                     </div>
                 </div>
@@ -122,7 +108,7 @@
                     <mat-panel-title class="row-spb">
                         {{txt.header}}
                         <div>
-                            <img src="../../assets/down-arrow.png" alt="" [ngClass]="{'rotate-class': ref.expanded}">
+                            <img src="../../assets/down-arrow.png" style="min-width: 20px;" alt="down-arrow" [ngClass]="{'rotate-class': ref.expanded}">
                         </div>
                     </mat-panel-title>
                     </mat-expansion-panel-header>

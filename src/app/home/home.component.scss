@@ -176,8 +176,8 @@
 }
 
 .divider_line {
-  border: 1px solid #ECECFF;
   margin-bottom: 35px;
+
 }
 
 .types_text {
@@ -197,7 +197,7 @@
 .plus_icon {
   background-image: url('../../assets/plus-icon.png');
   background-repeat: no-repeat;
-  width: 30px;
+  min-width: 30px;
   margin-top: 12px;
 }
 
@@ -240,10 +240,6 @@
   display: flex;
 }
 
-// .testi_sec {
-//   margin-bottom: 40px;
-// }
-
 .tsmnl_sub_hdr {
   font-size: 15px;
   line-height: 21px;
@@ -254,9 +250,9 @@
   background-color: #ffffff;
   border-radius: 4px;
   box-shadow: 9px 8px 27px 0 rgba(0, 0, 0, 0.04);
-  width: 517px;
+  width: 100%;
   margin-bottom: 30px;
-  padding: 50px 30px;
+  padding: 40px 30px;
 
 }
 
@@ -293,4 +289,88 @@
 .text_center {
     text-align: center;
     margin-bottom: 40px;
+}
+
+// Media quries // 
+
+@media(max-width: 930px) {
+  .transplant_img {
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+@media(max-width: 768px) {
+  .transplant_sec{
+    flex-direction: column;
+    .transplant_img {
+      margin-right: 0;
+      margin: 0 auto;
+      padding-bottom: 30px;
+    }
+  }
+
+  .resp_sec {
+    flex-direction: column;
+    .category_sec {
+      margin-bottom: 30px;
+      margin-right: 0;
+    }
+  }
+
+  
+}
+
+@media(max-width: 630px){
+  .enquire_section {
+    display: none;
+  }
+
+  .logo_section {
+    padding-top: 30px;
+  }
+}
+
+
+@media(max-width: 600px) {
+  .expansion_height {
+    height: 100% !important;
+  }
+
+  .tstmnl_slider {
+    width: 100%;
+    padding: 30px 10px;
+  }
+} 
+
+
+@media(max-width: 500px){
+  .hdr_text {
+    font-size: 25px;
+  }
+
+  .transplant_sec {
+    .gradient_cell {
+      font-size: 16px;
+      height: 100%;
+      padding: 8px 20px;
+    }
+  }
+
+  .mat-expansion-panel-header {
+    padding: 0 15px !important;
+  }
+  .mat-expansion-panel-header-title {
+    margin-right: 0 !important;
+  }
+
+  .transplant_text {
+    ul {
+      li {
+        padding: 20px 0;
+      }
+    }
+  }
 }

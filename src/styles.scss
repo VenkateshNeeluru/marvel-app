@@ -18,6 +18,7 @@ body {
   padding: 0 150px;
 }
 
+
 button {
   outline: none;
   border: none;
@@ -89,17 +90,26 @@ button {
   }
 
   // .prev-slide {
-  // 	// background: url(./assets/images/nav-icon.png) no-repeat scroll 0 0;
+  // 	background: url(./assets/previous.png) no-repeat scroll 0 0;
   // 	left: -33px;
   // 	&:hover {
   // 		background-position: 0px -53px;
   // 	}
   // }
   // .next-slide {
-  // 	// background: url(./assets/images/nav-icon.png) no-repeat scroll -24px 0px;
+  // 	background: url(./assets/next.png) no-repeat scroll -24px 0px;
   // 	right: -33px;
   // 	&:hover {
   // 		background-position: -24px -53px;
   // 	}
   // }
+}
+
+@media(max-width: 1100px) {
+  .block_container {
+    padding:0 40px;
+  }
+  .category_sec {
+    margin-right: 20px;
+  }
 }

@@ -7,18 +7,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  // doctorsInfo = [
-  //   {
-  //     name: 'Dr. Vijay Agarwal',
-  //     proffession: 'MD, MRCP, PhD,CCT <br> Lead & Sr. Consultant - Medical Oncology & Haematology',
-  //     description: 'Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with over 12 years of experience in Oncology. Dr. Agarwal has been practising Medical Oncology since 2004.'
-  //   },
-  //   {
-  //     name: 'Dr. Vijay Agarwal',
-  //     proffession: 'MD, MRCP, PhD,CCT <br> Lead & Sr. Consultant - Medical Oncology & Haematology',
-  //     description: 'Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with over 12 years of experience in Oncology. Dr. Agarwal has been practising Medical Oncology since 2004.'
-  //   }
-  // ];
+  doctorsInfo = [
+    {
+      name: 'Dr. Vijay Agarwal',
+      proffession: 'MD, MRCP, PhD,CCT <br> Lead & Sr. Consultant - Medical Oncology & Haematology',
+      description: 'Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with over 12 years of experience in Oncology. Dr. Agarwal has been practising Medical Oncology since 2004.'
+    },
+    {
+      name: 'Dr. Vijay Agarwal',
+      proffession: 'MD, MRCP, PhD,CCT <br> Lead & Sr. Consultant - Medical Oncology & Haematology',
+      description: 'Dr. Vijay Agarwal is a Senior Consultant Medical Oncologist with over 12 years of experience in Oncology. Dr. Agarwal has been practising Medical Oncology since 2004.'
+    }
+  ];
 
   warningList = [
     {
@@ -90,7 +90,7 @@ export class HomeComponent implements OnInit {
   carouselOptions = {
     margin: 25,
     nav: true,
-    // navText: ["<div class='nav-btn prev-slide'></div>", "<div class='nav-btn next-slide'></div>"],
+    navText: ['<div class=\'nav-btn prev-slide\'></div>', '<div class=\'nav-btn next-slide\'></div>'],
     responsiveClass: true,
     responsive: {
       0: {
@@ -99,6 +99,10 @@ export class HomeComponent implements OnInit {
       },
       600: {
         items: 1,
+        nav: true
+      },
+      650: {
+        items: 2,
         nav: true
       },
       1000: {
