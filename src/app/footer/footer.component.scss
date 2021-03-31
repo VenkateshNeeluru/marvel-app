@@ -1,0 +1,26 @@
+.footer_section {
+    background-color: #272727;
+    height: 256px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+
+    .social_media_icons {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 40px;
+        margin-bottom: 40px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.21);
+        a {
+            margin-right: 10px;
+        }
+    }
+}
+
+.copyrights_text {
+    text-align: center;
+    p{
+        font-size: 15px;
+        color: #ffffff;
+    }
+}
