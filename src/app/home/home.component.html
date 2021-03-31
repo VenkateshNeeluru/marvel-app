@@ -21,6 +21,15 @@
                     <input class="input_field" type="email" placeholder="Email">
                     <input class="input_field" type="tel" placeholder="Phone number">
                     <textarea class="input_field" placeholder="Your Message"></textarea>
+                    <div class="captcha_border row-spb">
+                        <div class="row-vrt-c">
+                            <input type="checkbox"> 
+                            <span>I’m not a robot</span>   
+                        </div>
+                        <div>
+                            <img src="../../assets/recaptcha.png" alt="recaptcha" style="width:35px">
+                        </div>
+                    </div>
                     <button>Submit</button>
                 </div>
             </div>
@@ -149,4 +158,9 @@
             <button class="book_app_btn">Book An Appoinment</button>
         </div>
     </div>   
+    <!-- scroll to top button -->
+    <button (click)="scrollToTop()" class="scroll-to-top" [ngClass]="{'show-icon': showScroll}">
+        <img src="../../assets/chevron.png" alt="chevron">
+    </button>
 </div>
+

@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, HostListener, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -148,10 +148,27 @@ export class HomeComponent implements OnInit {
     },
   ];
   panelOpenState = false;
+  showScroll: boolean;
+  showScrollHeight = 300;
+  hideScrollHeight = 10;
 
   constructor() { }
+  @HostListener('window:scroll', [])
+  onWindowScroll(): void {
+    if ((window.pageYOffset || document.documentElement.scrollTop || document.body.scrollTop) > this.showScrollHeight) {
+      this.showScroll = true;
+    }
+    else {
+      this.showScroll = false;
+    }
+  }
 
   ngOnInit(): void {
+  }
+
+
+  scrollToTop(): void {
+    window.scrollTo(0, 0);
   }
 
 }

@@ -50,7 +50,6 @@
 .form_field_hdr {
   h4 {
     color: #213559;
-    font-family: 'Titillium Web', sans-serif;
     font-size: 20px;
     line-height: 24px;
     padding-bottom: 30px;
@@ -62,6 +61,7 @@
   input {
     height: 42px;
     padding: 0 15px;
+    font-family: 'Titillium Web', sans-serif;
 
   }
 
@@ -69,12 +69,27 @@
     height: 80px;
     padding: 10px 15px;
     resize: none;
+    font-family: 'Titillium Web', sans-serif;
   }
 
   button {
     background-color: #dd5a6a;
     width: 110px;
     height: 44px;
+  }
+}
+
+.captcha_border {
+  padding: 18px;
+  border: 0.87px solid #d0d0d0;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 13px;
+
+  span {
+    font-size: 12px;
+    margin-left: 10px;
   }
 }
 
@@ -113,7 +128,7 @@
 .transplant_text {
   ul {
     li {
-  
+
       padding: 20px;
       list-style-type: none;
       border-bottom: 1px solid #ececff;
@@ -186,7 +201,7 @@
   ul {
     li {
       color: #000000;
-  
+
       font-size: 14px;
       line-height: 39px;
       list-style-type: none;
@@ -219,7 +234,7 @@
 
       p {
         font-size: 14px;
-    
+
         padding-top: 10px;
       }
     }
@@ -287,15 +302,29 @@
 }
 
 .text_center {
-    text-align: center;
-    margin-bottom: 40px;
+  text-align: center;
+  margin-bottom: 40px;
 }
+
+.scroll-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  display: none;
+  transition: all .2s ease-in-out;
+
+  &.show-icon {
+    display: block;
+  }
+}
+
+
 
 // Media quries // 
 
 @media(max-width: 930px) {
   .transplant_img {
-    img{
+    img {
       max-width: 100%;
       height: auto;
     }
@@ -303,8 +332,9 @@
 }
 
 @media(max-width: 768px) {
-  .transplant_sec{
+  .transplant_sec {
     flex-direction: column;
+
     .transplant_img {
       margin-right: 0;
       margin: 0 auto;
@@ -314,16 +344,17 @@
 
   .resp_sec {
     flex-direction: column;
+
     .category_sec {
       margin-bottom: 30px;
       margin-right: 0;
     }
   }
 
-  
+
 }
 
-@media(max-width: 630px){
+@media(max-width: 630px) {
   .enquire_section {
     display: none;
   }
@@ -343,10 +374,10 @@
     width: 100%;
     padding: 30px 10px;
   }
-} 
+}
 
 
-@media(max-width: 500px){
+@media(max-width: 500px) {
   .hdr_text {
     font-size: 25px;
   }
@@ -362,6 +393,7 @@
   .mat-expansion-panel-header {
     padding: 0 15px !important;
   }
+
   .mat-expansion-panel-header-title {
     margin-right: 0 !important;
   }
